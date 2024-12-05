@@ -10,7 +10,7 @@ with st.form('my sorm'):
     coffe_roast_val = st.selectbox('커피 로스팅'['라이트', '미디엄', '다크'])
     brewing_val = st.selectbox('추출 방법', ['에어로프레스', '드립', '프렌치 프레스', '모카 포트', '사이폰'])
     serving_type_val = st.selectbox('서빙 형식', ['핫', '아이스', '프라페'])
-    milk_val = st.select_sliderr('우유 정도',['없음', '낮음', '중간', '높음'])
+    milk_val = st.select_slider('우유 정도',['없음', '낮음', '중간', '높음'])
     owncup_val = st.checkbox('자신의 컵 가져오기')
     submitted = st.form_submit_button('제출')# 모든 양식은 제출 버튼을 가져야 함
 if submitted:
